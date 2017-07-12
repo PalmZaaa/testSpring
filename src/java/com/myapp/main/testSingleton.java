@@ -21,11 +21,11 @@ public class testSingleton {
     public static void main(String[] args) {
         // TODO code application logic here
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-        testForm formA = (testForm) ctx.getBean("testSingleton");
+        testForm formA = (testForm) ctx.getBean("testPrototype");
         formA.setMsg("testsetetsetst");
         System.out.println(formA.getMsg());
         
-        testForm formB = (testForm) ctx.getBean("testSingleton");
+        testForm formB = (testForm) ctx.getBean("testPrototype");
         System.out.println(formB.getMsg());
     }
     

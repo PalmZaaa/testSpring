@@ -27,6 +27,6 @@
     </bean>
     
     
-    <bean id="testSingleton" class="com.myapp.form.testForm" scope="prototype">
+    <bean id="testPrototype" class="com.myapp.form.testForm" scope="prototype">
     </bean>
 </beans>
